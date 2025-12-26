@@ -6,6 +6,7 @@ class Etudiant{
     private String prenom;
     private String nom;
     private String email;
+    private Date dateNaissance;
 
 
     //Constructeur sans parametre(valeur par defaut 0 pour les nombres et null pour les string)
