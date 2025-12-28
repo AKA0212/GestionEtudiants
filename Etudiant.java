@@ -25,16 +25,16 @@ class Etudiant{
     }
 
     // Setters
-    public static void setNumero(int numero){
+    public void setNumero(int numero){
     	this.numero = numero;
     }
-    public static void setPrenom(String prenom){
+    public void setPrenom(String prenom){
     	this.prenom = prenom;
     }
-    public static void setNom(String nom){
+    public void setNom(String nom){
     	this.nom = nom;
     }
-    public static void setEmail(String email){
+    public void setEmail(String email){
     	this.email = email;
     }
     public void setDateNaissance(int annee, int mois, int jour){
@@ -54,11 +54,18 @@ class Etudiant{
     public String getEmail(){
     	return email;
     }
-    public Date getDateNaissance(){
+    public LocalDate getDateNaissance(){
 	return dateNaissance;
     }
 
-    
+   // Affichage des infos d'un Etudiant
+   //public void afficherEtudiant(){
+//	System.out.println("==================================================================================================");
+//	System.out.println("| Numero |	        Prenom		|   Nom	    |		email		|  Date de Naissance  |");
+//	System.out.println("==================================================================================================");
+//	System.out:.println("| " +  get"											      |");
+//	System.out.println("==================================================================================================");
+  // } 
 
 }
 
