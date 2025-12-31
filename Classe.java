@@ -13,5 +13,23 @@ class Classe{
         this.Niveau = Niveau;
     }
 
+    public void setCodeClasse(int codeClasse){
+        this.codeClasse = codeClasse;
+    }
+    public void setNomClasse(String nomClasse){
+        this.nomClasse = nomClasse;
+    }
+    public void setNiveau(){}// a definir
+
+    public int getCodeClasse(){
+        return codeClasse;
+    }
+
+    public String getNomClasse(){
+        return nomClasse;
+    }
+
+    //public enum getNiveau()
+
 
 }
