@@ -7,6 +7,7 @@ class Etudiant{
     private String nom;
     private String email;
     private LocalDate dateNaissance;
+    private int codeClasse; 
 
 
     //Constructeur sans parametre(valeur par defaut 0 pour les nombres et null pour les string)
@@ -16,12 +17,13 @@ class Etudiant{
     }
 
     //Constructeur avec parametre nous permet de passer des valeurs lors de l'instanciation
-    Etudiant(int numero, String prenom, String nom, String email, LocalDate dateNaissance){
+    Etudiant(int numero, String prenom, String nom, String email, LocalDate dateNaissance, int codeClasse){
         this.numero = numero;
         this.prenom = prenom;
         this.nom = nom;
         this.email = email;
 	    this.dateNaissance = dateNaissance;
+        this.codeClasse = codeClasse;
     }
 
     // Setters
@@ -39,7 +41,11 @@ class Etudiant{
     }
     public void setDateNaissance(int annee, int mois, int jour){
    	this.dateNaissance = LocalDate.of(annee, mois, jour);
-   }
+    }
+    public void setCodeClasse(int codeClasse){
+        this.codeClasse = codeClasse;
+    }
+
 
     // Getters
     public int getNumero(){
@@ -56,6 +62,9 @@ class Etudiant{
     }
     public LocalDate getDateNaissance(){
 	return dateNaissance;
+    }
+    public int getCodeClasse(){
+        return codeClasse;
     }
 
    // Affichage des infos d'un Etudiant
