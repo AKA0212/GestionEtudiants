@@ -21,7 +21,7 @@ class Etudiant{
         this.prenom = prenom;
         this.nom = nom;
         this.email = email;
-	this.dateNaissance = dateNaissance;
+	    this.dateNaissance = dateNaissance;
     }
 
     // Setters
