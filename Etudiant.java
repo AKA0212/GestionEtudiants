@@ -42,9 +42,9 @@ class Etudiant{
     public void setDateNaissance(int annee, int mois, int jour){
    	this.dateNaissance = LocalDate.of(annee, mois, jour);
     }
-    public void setCodeClasse(int codeClasse){
-        this.codeClasse = codeClasse;
-    }
+    //public void setCodeClasse(int codeClasse){
+    //    this.codeClasse = codeClasse;
+    //}
 
 
     // Getters
@@ -63,9 +63,9 @@ class Etudiant{
     public LocalDate getDateNaissance(){
 	return dateNaissance;
     }
-    public int getCodeClasse(){
-        return codeClasse;
-    }
+    //public int getCodeClasse(){
+    //    return codeClasse;
+    //}
 
    // Affichage des infos d'un Etudiant
    //public void afficherEtudiant(){
