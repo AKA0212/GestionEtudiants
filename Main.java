@@ -13,5 +13,16 @@ class Main{
         System.out.println("==================================================================================================");
         System.out.println("|      " + etudiant1.getNumero() + " |      " + etudiant1.getPrenom()  + "      |    " + etudiant1.getNom()  + "   | " + etudiant1.getEmail() + "   |     " + etudiant1.getDateNaissance() + "     | ");
         System.out.println("==================================================================================================");
+
+        // test de creation de classse
+         Classe classe1 = new Classe(1, "GLSI-B", "Licence");
+	System.out.println("==================================================================================================");
+        System.out.println("| Code |      Nom Classe         |  Niveau     |");
+	System.out.println("==================================================================================================");
+        System.out.println("|      " + classe1.getCodeClasse() + " |      " + classe1.getNomClasse()  + "      |    " + classe1.getNiveau()  + "   | ");
+	System.out.println("==================================================================================================");
+
+
+
    }
 }
