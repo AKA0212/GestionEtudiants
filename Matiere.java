@@ -1,14 +1,14 @@
 class Matiere{
     private int reference;
     private String libelle;
-    private short coefficient;
+    private int coefficient;
 
     // Constructeur
     public Matiere(){
 
     }
 
-    public Matiere(int reference, String libelle, short coefficient){
+    public Matiere(int reference, String libelle, int coefficient){
         this.reference = reference;
         this.libelle = libelle;
         this.coefficient = coefficient;
@@ -23,7 +23,7 @@ class Matiere{
         this.libelle = libelle;
     }
 
-    public void setCoefficient(short coefficient){
+    public void setCoefficient(int coefficient){
         this.coefficient = coefficient;
     }
 
@@ -36,7 +36,7 @@ class Matiere{
         return libelle;
     }
 
-    public short getCoefficient(){
+    public int getCoefficient(){
         return coefficient;
     }
 
