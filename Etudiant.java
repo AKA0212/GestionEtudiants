@@ -17,7 +17,7 @@ class Etudiant{
     }
 
     //Constructeur avec parametre nous permet de passer des valeurs lors de l'instanciation
-    Etudiant(int numero, String prenom, String nom, String email, LocalDate dateNaissance, int codeClasse){
+    Etudiant(int numero, String prenom, String nom, String email, LocalDate dateNaissance){//int codeClasse a ajouter
         this.numero = numero;
         this.prenom = prenom;
         this.nom = nom;
