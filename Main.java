@@ -1,6 +1,6 @@
 import java.time.LocalDate;
 //import java.io.File;// biblio pour les fichiers
-
+ enum Niveau {Licence, Master, Dut, Dic};
 class Main{
 	public static void main(String[] args){
 
@@ -15,7 +15,7 @@ class Main{
         System.out.println("==================================================================================================");
 
         // test de creation de classse
-         Classe classe1 = new Classe(1, "GLSI-B", "Licence");
+         Classe classe1 = new Classe(1, "GLSI-B", niveau.Licence );
 	System.out.println("==================================================================================================");
         System.out.println("| Code |      Nom Classe         |  Niveau     |");
 	System.out.println("==================================================================================================");

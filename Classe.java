@@ -1,16 +1,16 @@
 class Classe{
     private int codeClasse;
     private String nomClasse;
-    private enum Niveau{"Licence", "Master", "Dut","Dic"};
-
+    enum Niveau {Licence, Master, Dut, Dic};
+    Niveau niveau;
     public Classe(){
 
     }
 
-    public Classe(int codeClasse, String nomClasse, enum Niveau){
+    public Classe(int codeClasse, String nomClasse, Niveau niveau){
         this.codeClasse = codeClasse;
         this.nomClasse = nomClasse;
-        this.Niveau = Niveau;
+        this.niveau = niveau;
     }
 
     public void setCodeClasse(int codeClasse){
@@ -19,7 +19,9 @@ class Classe{
     public void setNomClasse(String nomClasse){
         this.nomClasse = nomClasse;
     }
-    public void setNiveau(){}// a definir
+    public void setNiveau(Niveau niveau){
+        this.niveau = niveau;
+    }
 
     public int getCodeClasse(){
         return codeClasse;
@@ -29,7 +31,9 @@ class Classe{
         return nomClasse;
     }
 
-    //public enum getNiveau()
+    public Niveau getNiveau(){
+        return niveau;
+    }
 
 
 }
