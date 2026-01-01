@@ -15,14 +15,19 @@ class Main{
         System.out.println("==================================================================================================");
 
         // test de creation de classse
-         Classe classe1 = new Classe(1, "GLSI-B", niveau.Licence );
-	System.out.println("==================================================================================================");
-        System.out.println("| Code |      Nom Classe         |  Niveau     |");
-	System.out.println("==================================================================================================");
-        System.out.println("|      " + classe1.getCodeClasse() + " |      " + classe1.getNomClasse()  + "      |    " + classe1.getNiveau()  + "   | ");
-	System.out.println("==================================================================================================");
+        //Classe classe1 = new Classe(1, "GLSI-B", niveau.Licence );
+	//System.out.println("==================================================================================================");
+        //System.out.println("| Code |      Nom Classe         |  Niveau     |");
+	//System.out.println("==================================================================================================");
+        //System.out.println("|      " + classe1.getCodeClasse() + " |      " + classe1.getNomClasse()  + "      |    " + classe1.getNiveau()  + "   | ");
+	//System.out.println("==================================================================================================");
 
+        // test de creation de matiere
+        Matiere matiere1 = new Matiere(1, "Algorithmique", 2);
+        System.out.println("\nInformation sur les matieres");
+        System.out.println("==================================================================================================");
 
+        System.out.println("Reference : " + matiere1.getReference() + ", Nom Matiere : " + matiere1.getLibelle() +", Coefficient : " +matiere1.getCoefficient());
 
    }
 }
